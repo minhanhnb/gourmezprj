@@ -1,0 +1,107 @@
+.logo
+{
+    width: 200px;
+    height : 200px;
+    border : 1px solid #000000;
+}
+body {
+  font-family: Lalezar;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(242, 242, 242);
+  }
+
+.hleft {
+    float: left;
+    margin-top : -50px;
+    margin-left : 70px;
+}
+
+.header1
+{
+  border : 1px solid #000000;
+  background-color:#AE2108;
+  height : 100px;
+  width : 100%;
+}
+.bar
+{
+    float : left;
+    display : flex;
+
+} 
+
+.right
+{
+  text-align : right;
+  margin-right : 20px;
+}
+.center
+{
+  text-align : center;
+  margin-left: 10px;
+  margin-right : 10px;
+
+}
+.boldcen{
+  font-weight : bold;
+  text-align : center;
+}
+
+.mainmenu
+{
+    width : 50%;
+    border : 1px solid #000000;
+    margin : 0 auto;
+}
+.headermenu li {
+  float: left;
+  width : 100px;
+  line-height: 40px;
+  border : 1px solid #000000;
+  margin : 5px;
+
+
+}
+  .headermenu ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 1220px;
+    padding : 0;
+    margin-left : 20px;
+    margin-top: 0px;
+}
+
+  .headermenu a
+  {
+    color: #FFFFFF;
+    text-decoration : none;
+    display : block;
+    text-align : center;
+
+  }
+
+  .bold 
+  {
+    font-style : bold;
+  }
+
+
+
+
+
+.footer1
+{
+  clear : both;
+  float : left;
+  margin-left : 20px;
+  margin-right : 20px;
+  margin-top: 20px;
+  height : 100px;
+  width : 1490px;
+}
+
+.line
+{
+ border :2px solid #0b7c4e;
+}
