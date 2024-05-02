@@ -28,8 +28,8 @@
             <nav class="navigation">
               <div class="headermenu"> 
               <ul class="mainmenu"> 
-                    <li><a href="index.php?quanly=trangchu&id=1">Trang chủ</a></li>
-                    <li><a href="index.php?quanly=xemtruoc">Xem trước trang</a></li>
+                    <li><a href="index.php?act=trangchu&id=1">Trang chủ</a></li>
+                    <li><a href="index.php?act=xemtruoc">Xem trước trang</a></li>
               </ul>
             </div>
 

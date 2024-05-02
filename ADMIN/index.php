@@ -1,3 +1,5 @@
+
+// ĐÂY CHÍNH LÀ CONTROLLER
 <?php
    session_start();
    ob_start();
@@ -9,9 +11,9 @@
  include("../ADMIN/VIEW/Pages/sidebar.php");
  ?>
     <?php 
-   if(isset($_GET['quanly']))
+   if(isset($_GET['act']))
    { 
-    switch($_GET['quanly'])
+    switch($_GET['act'])
     {
 
       case 'danhmuc':
@@ -19,6 +21,15 @@
         $kq=getall_category();
         include ('../ADMIN/VIEW/Pages/danhmuc.php');
         break;    
+    case 'delcategory':
+        if(isset($_GET['id_category']))
+        {
+            $id=$_GET['id_category'];
+            delcategory($id);
+        }
+        $kq=getall_category();
+        include ('../ADMIN/VIEW/Pages/danhmuc.php');
+
   }
 }
   else 

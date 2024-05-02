@@ -1,3 +1,5 @@
+
+
 <div class="main">
     <h2> Danh mục </h2>
     <form action="" method="POST">
@@ -23,10 +25,11 @@ if (isset($kq)&&(count($kq)>1))
     {
         echo '<tr>
             <td>'.$i.' </td> 
-            <td> </td>
-            <td> </td> 
-            <td><a href="#"> Sửa</a> | <a href="#"> Xóa</a>  </td> 
-                </tr>  '
+            <td>'.$cate['category_name'].' </td>
+            <td> '.$cate['number'].'</td> 
+            <td><a href="index.php?act=updatecategory&id='.$cate['id_category'].'"> Sửa</a> | <a href="index.php?act=delcategory&id='.$cate['id_category'].'"> Xóa</a>  </td> 
+                </tr>  ';
+        $i++;
     }
 }
 ?>

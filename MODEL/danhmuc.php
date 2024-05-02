@@ -1,4 +1,7 @@
 <?php
+function delcategory($id) {
+
+}
 function getall_category()
 {
     $conn=connectdb();
