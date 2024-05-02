@@ -34,13 +34,13 @@
     </form>
 
     <?php
-    include "
     if((isset($_POST["dangnhap"])) && ($_POST['dangnhap']))
     {
         $user =$_POST['user'];
         $pass =$_POST['pass'];
 
     }
+    ?>
 
 </div>
 </div>

@@ -1,10 +1,14 @@
 
 
 <div class="main">
-    <h2> Danh mục </h2>
-    <form action="" method="POST">
-        <input type="text" name="tendm" id="">
-        <input type="submit" name="themmoi" value="Thêm mới">
+    <h2> Cập nhật danh mục </h2>
+<?php
+//echo var_dump($kqone);
+?>
+    <form action="index.php?act=updatecategory" method="POST">
+        <input type="text" name="categoryname" id="" value="<?=$kqone[0]['category_name']?>">
+        <input type="hidden" name="id" value="<?=$kqone[0]['category_name']?>">
+        <input type="submit" name="capnhat" value="Cập nhật">
 </form>
 
 <br>
