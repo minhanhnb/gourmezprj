@@ -1,0 +1,38 @@
+.sidebar
+{
+    border : 1px solid #000000;
+    height : 390 px; 
+    width : 20%; 
+    margin-top : 5px; 
+    margin- left : 5px; 
+    float : left;
+}
+
+ul.list_sidebar
+{
+    padding:0; 
+    margin : 0; 
+    width : 60%;
+    border : 1px solid #; 
+    list-style : none; 
+    margin : 0 auto; 
+    line-height : 27px;
+}
+
+ul.list_sidebar li:hover{
+    background : burlywood;
+}
+
+ul.list_sidebar li a 
+{
+    text-decoration: none;
+    text-align : center;
+    color :blueviolet;
+
+}
+ul.list_sidebar li 
+{
+    margin : 7px; 
+    padding : 5px;
+}
+
