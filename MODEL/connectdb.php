@@ -1,9 +1,16 @@
 <?php
-$mysqli = new mysqli("localhost","root","","gourmez_sql");
-
-// Check connection
-if ($mysqli->connect_errno) {
-  echo "Kết nối MYSQLi lỗi: " . $mysqli -> connect_error;
-  exit();
+function connectdb(){ 
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  try {
+    $conn = new PDO("mysql:host=$servername;dbname=gourmez_sql", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   // echo "Connected successfully";
+  } catch(PDOException $e) {
+   // echo "Connection failed: " . $e->getMessage();
+  }
+  return $conn;
 }
 ?>
