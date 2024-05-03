@@ -30,15 +30,20 @@ function getonecategory($id) {
 function updatecategory($id, $catename)
 {
     $conn=connectdb();
-    $sql = "UPDATE tbl_category SET category_name = :catename WHERE id_category = :id";
+    $sql = "UPDATE tbl_category SET category_name='".$catename."' WHERE id_category =".$id;
 
     // Prepare statement
     $stmt = $conn->prepare($sql);
-    // Bind parameters
-    $stmt->bindParam(':catename', $catename);
-    $stmt->bindParam(':id', $id);
     // Execute the query
     $stmt->execute();
 }
 
+function addcategory($catename)
+{
+    $conn=connectdb();
+    $sql = "INSERT INTO tbl_category (category_name) 
+    VALUES ('".$catename."')";
+    // use exec() because no results are returned
+    $conn->exec($sql);
+}
 ?>

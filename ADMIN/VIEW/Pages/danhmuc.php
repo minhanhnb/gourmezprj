@@ -2,8 +2,8 @@
 
 <div class="main">
     <h2> Danh mục </h2>
-    <form action="" method="POST">
-        <input type="text" name="tendm" id="">
+    <form action="index.php?act=addcategory" method="POST">
+        <input type="text" name="namecategory" id="">
         <input type="submit" name="themmoi" value="Thêm mới">
 </form>
 

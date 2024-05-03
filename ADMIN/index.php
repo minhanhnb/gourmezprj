@@ -50,9 +50,18 @@
             $kq=getall_category();
             include ('../ADMIN/VIEW/Pages/danhmuc.php');
         }
-        
-           
-            break;    
+           break;   
+            case 'addcategory':
+              if(isset($_POST['themmoi'])&&($_POST['themmoi']))
+              {
+                $catename=$_POST['namecategory'];
+                addcategory($catename);
+              }
+              //Lấy danh sách danh mục 
+              $kq=getall_category();
+              include ('../ADMIN/VIEW/Pages/danhmuc.php');
+              break; 
+
 
 
   }

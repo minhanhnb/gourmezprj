@@ -5,11 +5,11 @@
 <?php
 //echo var_dump($kqone);
 ?>
-    <form action="index.php?act=updatecategory" method="POST">
+    <form action="index.php?act=updatecategory" method="post">
         <input type="text" name="categoryname" id="" value="<?=$kqone[0]['category_name']?>">
-        <input type="hidden" name="id" value="<?=$kqone[0]['category_name']?>">
+        <input type="hidden" name="id" value="<?=$kqone[0]['id_category']?>">
         <input type="submit" name="capnhat" value="Cập nhật">
-</form>
+     </form>
 
 <br>
 <table>
